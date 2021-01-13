@@ -18,11 +18,11 @@ window.TrelloPowerUp.initialize({
             },
             {
               text: "Static",
-              icon: HYPERDEV_ICON, // for card front badges only
               color: "blue",
             },
           ];
         });
     },
-  });
-  
+});
+
+// for card front badges only
