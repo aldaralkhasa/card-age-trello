@@ -1,0 +1,25 @@
+{
+  "name": "card-age-trello",
+  "version": "1.0.0",
+  "description": "Trello Power-up to add a days counter to a card",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "build": "parcel build ./src/html/*.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldaralkhasa/card-age-trello.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aldaralkhasa/card-age-trello/issues"
+  },
+  "homepage": "https://github.com/aldaralkhasa/card-age-trello#readme"
+}
