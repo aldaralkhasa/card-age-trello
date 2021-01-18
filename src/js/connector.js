@@ -24,7 +24,8 @@ window.TrelloPowerUp.initialize({
             const date2 = new Date();
             const diffTime = Math.abs(date2 - date1);
             const diffMinutes = Math.ceil(diffTime / (1000 * 60 * 60));
-            if (diffMinutes < 1440) {
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            if (diffDays <= 1) {
               return {
                 text: diffMinutes + " Minutes",
                 refresh: 3600, // in seconds
