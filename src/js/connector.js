@@ -1,11 +1,11 @@
 window.TrelloPowerUp.initialize({
   "card-badges": function (t, opts) {
     return t.card("all").then(function (card) {
+      const date1 = new Date(card.dateLastActivity);
+      const date2 = new Date();
       return [
         {
-          dynamic: function (card) {
-            const date1 = new Date(card.dateLastActivity);
-            const date2 = new Date();
+          dynamic: function () {
             console.log("card ", card.dateLastActivity);
 
             console.log("date1: ", date1);
