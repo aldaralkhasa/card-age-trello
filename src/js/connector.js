@@ -1,7 +1,8 @@
 window.TrelloPowerUp.initialize({
   "card-badges": function (t, opts) {
     return t.card("all").then(function (card) {
-      console.log(card);
+      console.log(JSON.stringify(card, null, 2));
+
       let { dateLastActivity } = card;
 
       let counter = 0;
