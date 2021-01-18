@@ -34,13 +34,14 @@ window.TrelloPowerUp.initialize({
               color: "light-gray",
             };
           },
+        },
         {
           dynamic: function () {
             const date2 = new Date();
             const diffTime = Math.abs(date2 - date1);
             const diffHours = Math.ceil(diffTime / (1000 * 60 * 60));
             const diffMinutes = Math.ceil(diffTime / (1000 * 60));
-            
+
             if (diffHours >= 1) return null;
 
             return {
