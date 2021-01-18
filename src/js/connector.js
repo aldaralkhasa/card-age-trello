@@ -1,17 +1,18 @@
 window.TrelloPowerUp.initialize({
   "card-badges": function (t, opts) {
     return t.card("all").then(function (card) {
+      console.log(card);
       let { dateLastActivity } = card;
+
       let counter = 0;
       return [
         {
           dynamic: function (dateLastActivity) {
             const date1 = new Date(dateLastActivity);
             const date2 = new Date();
-            console.log(dateLastActivity)
             console.log(date1);
             console.log(date2);
-            
+
             const diffTime = Math.abs(date2 - date1);
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
