@@ -13,9 +13,9 @@ window.TrelloPowerUp.initialize({
             if (diffDays <= 1) return null;
 
             return {
-              text: diffDays + " أيام",
+              text: diffDays + " Days",
               refresh: 80000, // in seconds
-              color: "sky",
+              color: diffDays > 5 ? "red" : "sky",
             };
           },
         },
@@ -29,9 +29,9 @@ window.TrelloPowerUp.initialize({
             if (diffDays > 1 || diffHours == 1) return null;
 
             return {
-              text: diffHours + " ساعات",
+              text: diffHours + " Hours",
               refresh: 3600, // in seconds
-              color: "light-gray",
+              color: "blue",
             };
           },
         },
@@ -45,7 +45,7 @@ window.TrelloPowerUp.initialize({
             if (diffHours > 1) return null;
 
             return {
-              text: diffMinutes + " دقائق",
+              text: diffMinutes + " Minutes",
               refresh: 60, // in seconds
               color: "light-gray",
             };
