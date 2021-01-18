@@ -26,7 +26,7 @@ window.TrelloPowerUp.initialize({
             const diffHours = Math.ceil(diffTime / (1000 * 60 * 60));
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) - 1;
 
-            if (diffDays >= 1) return null;
+            if (diffDays > 1 || diffHours == 1) return null;
 
             return {
               text: diffHours + " ساعات",
@@ -42,7 +42,7 @@ window.TrelloPowerUp.initialize({
             const diffHours = Math.ceil(diffTime / (1000 * 60 * 60));
             const diffMinutes = Math.ceil(diffTime / (1000 * 60));
 
-            if (diffHours >= 1) return null;
+            if (diffHours > 1) return null;
 
             return {
               text: diffMinutes + " دقائق",
